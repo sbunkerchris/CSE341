@@ -13,6 +13,7 @@ const initDb = (callback) => {
     .then((client) => {
       _db = client;
       callback(null, _db);
+      console.log('Db is initialized');
     })
     .catch((err) => {
       callback(err);
@@ -23,6 +24,7 @@ const getDb = () => {
   if (!_db) {
     throw Error('Db not initialized');
   }
+  console.log('Db is retrieved');
   return _db;
 };
 
