@@ -1,0 +1,19 @@
+// LOCALHOST
+###
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/636740cf0c6c7bed8705c8fe
+###
+GET http://localhost:8080/contacts/636740cf0c6c7bed8705c8ff
+###
+GET http://localhost:8080/contacts/636740cf0c6c7bed8705c900
+
+// PRODUCTION Deploy
+###
+GET https://cse341-rduw.onrender.com/contacts
+###
+GET https://cse341-rduw.onrender.com/contacts/636740cf0c6c7bed8705c8fe
+###
+GET https://cse341-rduw.onrender.com/contacts/636740cf0c6c7bed8705c8ff
+###
+GET https://cse341-rduw.onrender.com/contacts/636740cf0c6c7bed8705c900
