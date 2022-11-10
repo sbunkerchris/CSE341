@@ -1,19 +1,38 @@
 // LOCALHOST
-###
+### request all data in collection
 GET http://localhost:8080/contacts
-###
-GET http://localhost:8080/contacts/63675dd80c6c7bed8705c901
-###
-GET http://localhost:8080/contacts/63675dd80c6c7bed8705c902
-###
-GET http://localhost:8080/contacts/63675dd80c6c7bed8705c903
+### request a specific entry in database.
+GET http://localhost:8080/contacts/636c8814d1dddf58425b98c5
+### create contact
+POST http://localhost:8080/contacts HTTP/1.1
+content-type:application/json
 
+{
+    "firstName":"Ashley", 
+    "lastName":"Weaver", 
+    "email":"aWeaver@test.com", 
+    "favoriteColor":"Brown", 
+    "birthday":"06/19/2000"
+}
+### edit contact 
+PUT http://localhost:8080/contacts/636c8814d1dddf58425b98c5 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ashley 2", 
+    "lastName":"Weaver", 
+    "email":"aWeaver@test.com", 
+    "favoriteColor":"orange", 
+    "birthday":"06/19/2000"
+} 
+### delete contact
+DELETE http://localhost:8080/contacts/6220b775099269ff7b31ceab HTTP/1.1
 // PRODUCTION Deploy
 ###
 GET https://cse341-rduw.onrender.com/contacts
 ###
-GET https://cse341-rduw.onrender.com/contacts/63675dd80c6c7bed8705c901
+GET https://cse341-rduw.onrender.com/contacts/636763330c6c7bed8705c906
 ###
-GET https://cse341-rduw.onrender.com/contacts/63675dd80c6c7bed8705c902
+GET https://cse341-rduw.onrender.com/contacts/636763330c6c7bed8705c907
 ###
-GET https://cse341-rduw.onrender.com/contacts/63675dd80c6c7bed8705c903
+GET https://cse341-rduw.onrender.com/contacts/636763330c6c7bed8705c908
