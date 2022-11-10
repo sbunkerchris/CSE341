@@ -3,12 +3,14 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res, next) => {
   const result = await mongodb.getDb().db().collection('contacts').find();
-  // console.log('results: ' + result + ' end results');
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
+    console.log('lists:' + lists + 'end lists');
+    console.log('results: ' + result + ' end results');
   });
 };
+
 
 const getSingle = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);

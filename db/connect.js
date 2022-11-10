@@ -17,6 +17,7 @@ const initDb = (callback) => {
     })
     .catch((err) => {
       callback(err);
+      console.log('Db not initialized');
     });
 };
 
