@@ -7,7 +7,7 @@ const doc = {
     title: 'My API',
     description: 'Description',
   },
-  host: `${baseURL}:${port}`,
+  host: `${baseURL}`,
   schemes: ['https'],
 };
 
