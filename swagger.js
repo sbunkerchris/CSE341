@@ -1,11 +1,12 @@
 const swaggerAutogen = require('swagger-autogen')();
+const baseURL = ENV.baseURL;
 
 const doc = {
   info: {
     title: 'My API',
     description: 'Description',
   },
-  host: 'localhost:8080',
+  host: `${baseURL}:8080`,
   schemes: ['http'],
 };
 
