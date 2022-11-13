@@ -7,7 +7,7 @@ const doc = {
     description: 'Description',
   },
   host: `localhost:${port}`,
-  schemes: ['http'],
+  schemes: ['https'],
 };
 
 console.log('doc start: ' + doc + ' doc end.');
