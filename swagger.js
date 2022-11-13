@@ -1,13 +1,14 @@
 const swaggerAutogen = require('swagger-autogen')();
 const baseURL = ENV.baseURL;
+const port = process.env.PORT || 8080;
 
 const doc = {
   info: {
     title: 'My API',
     description: 'Description',
   },
-  host: `${baseURL}:8080`,
-  schemes: ['http'],
+  host: `${baseURL}:${port}`,
+  schemes: ['https'],
 };
 
 console.log('doc start: ' + doc + ' doc end.');

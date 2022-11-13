@@ -9,7 +9,7 @@
   "host": "https://cse341-rduw.onrender.com:8080",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/contacts/": {
