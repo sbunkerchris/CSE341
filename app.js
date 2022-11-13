@@ -9,11 +9,11 @@ const app = express();
 
 app
   .use(bodyParser.json())
+  .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
   })
-  .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use('/', require('./routes'));
 
 mongodb.initDb((err, mongodb) => {
