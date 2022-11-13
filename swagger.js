@@ -7,7 +7,7 @@ const doc = {
     title: 'My API',
     description: 'Description',
   },
-  host: `${baseURL}`,
+  host: `cse341-rduw.onrender.com`,
   schemes: ['https'],
 };
 
