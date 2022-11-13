@@ -2,7 +2,7 @@
 ### request all data in collection
 GET http://localhost:8080/contacts
 ### request a specific entry in database.
-GET http://localhost:8080/contacts/636c8814d1dddf58425b98c5
+GET http://localhost:8080/contacts/636c8f4d038e0843c281b9af
 ### create contact
 POST http://localhost:8080/contacts HTTP/1.1
 content-type:application/json
@@ -15,23 +15,23 @@ content-type:application/json
     "birthday":"06/19/2000"
 }
 ### edit contact 
-PUT http://localhost:8080/contacts/636c8814d1dddf58425b98c5 HTTP/1.1
+PUT http://localhost:8080/contacts/636c8f4d038e0843c281b9af HTTP/1.1
 content-type: application/json
 
 {
     "firstName":"Ashley 2", 
     "lastName":"Weaver", 
     "email":"aWeaver@test.com", 
-    "favoriteColor":"orange", 
+    "favoriteColor":"Orange", 
     "birthday":"06/19/2000"
 } 
 ### delete contact
-DELETE http://localhost:8080/contacts/636c8814d1dddf58425b98c5 HTTP/1.1
+DELETE http://localhost:8080/contacts/636c8f4d038e0843c281b9af HTTP/1.1
 // PRODUCTION Deploy
 ###
 GET https://cse341-rduw.onrender.com/contacts
 ###
-GET https://cse341-rduw.onrender.com/contacts/636763330c6c7bed8705c906
+GET https://cse341-rduw.onrender.com/contacts/636c8fc18f611e0fecf24fab
 ###
 POST https://cse341-rduw.onrender.com/contacts HTTP/1.1
 content-type:application/json
@@ -43,8 +43,8 @@ content-type:application/json
     "favoriteColor":"Brown", 
     "birthday":"06/19/2000"
 }
-
-PUT https://cse341-rduw.onrender.com/contacts/636c8814d1dddf58425b98c5 HTTP/1.1
+### edit conatact
+PUT https://cse341-rduw.onrender.com/contacts/636c8fc18f611e0fecf24fab HTTP/1.1
 content-type: application/json
 
 {
@@ -55,4 +55,4 @@ content-type: application/json
     "birthday":"06/19/2000"
 } 
 ### delete contact
-DELETE https://cse341-rduw.onrender.com/contacts/636c8814d1dddf58425b98c5 HTTP/1.1
+DELETE https://cse341-rduw.onrender.com/contacts/636c8fc18f611e0fecf24fab HTTP/1.1
